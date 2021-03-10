@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+	<head>
+        <meta charset="utf-8">
+		<title>Torino Mapping Party 2021</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style >
+        .reveal iframe {
+           max-width: 100%;
+           max-height: 100%;
+		position: fixed;
+        }
+
+   		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" style=" display: flex;  justify-content: center;">
+
+				<section data-background-image="images/TMP2021_save-the-date-con-loghi.jpg" data-background-size="80%">
+                </section>
+
+				<section  data-background-image="images/slide_background.png" data-background-size="80%">
+					<p>Slides Ale...</p>
+				</section>
+
+				<section  data-background-image="images/slide_background.png" data-background-size="80%">
+					<a href="https://www.openstreetmap.org/#map=12/45.0735/7.6156" target="_blank">
+						<h1>La mappa di base</h1>
+					</a>
+				</section>
+				<section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 100px; margin-top: -100px;">
+							<h1>Il modello dati</h1>
+						</div>
+						<h3>Un'entità geografica è rappresentata da</h3>
+						<h3><span style="color: #3019c1">una geometria</span></h3>
+						<h3>e</h3>
+						<h3><span style="color: #3019c1">degli attributi</span></h3>
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 0px; margin-top: -50px;">
+							<h1>Geometrie</h1>
+						</div>
+
+						<table style="width:80%; height: 60%; border-collapse:collapse; border: none;">
+							<tr style="border: none;">
+								<td
+										style="height:60px; width: 90px;vertical-align:center; text-align:center; border: none;">
+									<img style="width: 60px; height: 60px;"  data-src="images/Mf_node.svg" ></td>
+							<td
+									style="height:60px; vertical-align:center; text-align:left; border: none;color: #3019c1">NODE</td>
+							<td style="height:60px; vertical-align:center; text-align:left; border: none;"><p
+									style="font-size: 0.6em">Sono
+								definiti da Latitudine, Longitudine e ID</p><td>
+							</tr>
+							<tr style="border: none;">
+								<td
+										style="height:60px; width: 90px;vertical-align:center; text-align:center; border: none;">
+									<img style="width: 60px; height: 60px;" data-src="images/Mf_way.svg" ></td>
+							<td
+									style="height:60px; vertical-align:center; text-align:left; border: none;color: #3019c1">WAY</td>
+							<td style="height:60px; vertical-align:center; text-align:left; border: none;"><p
+									style="font-size: 0.6em">Sequenze ordinate di nodi</p></td>
+							</tr>
+							<tr style="border: none;">
+								<td
+										style="height:60px;Cvertical-align:center; text-align:center; border: none;"colspan="2">
+									<img style="width: 60px; height: 60px;" data-src="images/Mf_closed_way.svg" ></td>
+							<td style="height:60px; vertical-align:center; text-align:left; border: none;"><p
+									style="font-size: 0.6em">Linee chiuse</p></td>
+							</tr>
+							<tr style="border: none;">
+								<td
+										style="height:60px; width: 90px;vertical-align:center; text-align:center; border: none;" colspan="2">
+									<img style="width: 60px; height: 60px;" data-src="images/Mf_area.svg" ></td>
+							<td style="height:60px; vertical-align:center; text-align:left; border: none;"><p
+									style="font-size: 0.6em">Aree</p></td>
+							</tr>
+							<tr style="border: none;">
+								<td style="height:60px; width: 90px; vertical-align:center; text-align:center; border: none;">
+									<img style="width: 60px; height: 60px;" data-src="images/Mf_relation.svg" ></td>
+							<td
+									style="height:60px; vertical-align:center; text-align:left; border: none;color: #3019c1">RELATION</td>
+							<td style="height:60px; vertical-align:center; text-align:left; border: none;"><p
+									style="font-size: 0.6em">Sequenze di nodi e/o way, che definiscono elementi o
+								geometrie complesse</p></td>
+						  	</tr>
+
+						</table>
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 100px; margin-top: -100px;">
+							<h1>TAG</h1>
+						</div>
+						<h4>Ogni elemento deve avere almeno un <span style="color: #3019c1">TAG</span></h4>
+						<h4>Il tag definisce cosa rappresenta e come si caratterizza l'oggetto geografico</h4>
+						<h4>Il tag è composto da una coppia di</h4>
+						<h4><span style="color: #3019c1">KEY=VALUE</span></h4>
+						<h4>Ogni elemento può possedere tag multipli (non c'è limite superiore)</h4>
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 10px; margin-top: -50px;">
+							<h1>Esempi</h1>
+						</div>
+						<img style="width:65%" data-src="images/esempio_nodo.png">
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 10px; margin-top: -50px;">
+							<h1>Esempi</h1>
+						</div>
+						<img style="width:75%" data-src="images/esempio_way.png">
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 10px; margin-top: -50px;">
+							<h1>Esempi</h1>
+						</div>
+						<img style="width:75%" data-src="images/esempio_area.png">
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 10px; margin-top: -50px;">
+							<h1>Esempi</h1>
+						</div>
+						<img style="width:75%" data-src="images/esempio_rel.png">
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 200px; margin-top: -300px;margin-left: 20px;">
+							<h2>La risposta è nella Wiki</h2>
+						</div>
+						<iframe allowfullscreen="" data-src="https://wiki.openstreetmap.org/wiki/Map_features"
+                                style="width: 80%; height: 60%; left: 100px; top:150px;"></iframe>
+					</section>
+					<section data-background-image="images/slide_background.png" data-background-size="80%">
+						<div style="margin-bottom: 200px; margin-top: -300px;margin-left: 20px;">
+							<h2>Ma anche su tagInfo</h2>
+						</div>
+						<iframe allowfullscreen="" data-src="https://taginfo.openstreetmap.org/"
+                                style="width: 80%; height: 60%; left: 100px; top:150px;"></iframe>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				hideInactiveCursor: true,
+				preloadIframes: true,
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+	</body>
+</html>

@@ -12,27 +12,27 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --background-color: #fff;
-  --main-font: Source Sans Pro, Helvetica, sans-serif;
+  --main-font: Georgia, serif;
   --main-font-size: 42px;
   --main-color: #222;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: Source Sans Pro, Helvetica, sans-serif;
+  --heading-font: Georgia, serif;
   --heading-color: #222;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
-  --heading-text-transform: uppercase;
+  --heading-text-transform: normal;
   --heading-text-shadow: none;
   --heading-font-weight: 600;
   --heading1-text-shadow: none;
-  --heading1-size: 2.5em;
+  --heading1-size: 2em;
   --heading2-size: 1.6em;
-  --heading3-size: 1.3em;
-  --heading4-size: 1em;
+  --heading3-size: 1.2em;
+  --heading4-size: 0.8em;
   --code-font: monospace;
-  --link-color: #2a76dd;
-  --link-color-hover: #6ca0e8;
-  --selection-background-color: #98bdef;
+  --link-color: black;
+  --link-color-hover: black;
+  --selection-background-color: #404040;
   --selection-color: #fff; }
 
 .reveal-viewport {
@@ -40,19 +40,19 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Georgia, serif;
   font-size: 42px;
   font-weight: normal;
   color: #222; }
 
 .reveal ::selection {
   color: #fff;
-  background: #98bdef;
+  background: #404040;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #98bdef;
+  background: #404040;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -71,25 +71,25 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Georgia, serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: normal;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2em; }
 
 .reveal h2 {
   font-size: 1.6em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 0.8em; }
 
 .reveal h1 {
   text-shadow: none; }
@@ -246,18 +246,18 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LINKS
  *********************************************/
 .reveal a {
-  color: #2a76dd;
+  color: black;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #6ca0e8;
+  color: black;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1a53a1; }
+  background: black; }
 
 /*********************************************
  * Frame helper
@@ -270,21 +270,21 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #2a76dd;
+  border-color: black;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #2a76dd; }
+  color: black; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #2a76dd; }
+  color: black; }
 
 /*********************************************
  * PRINT BACKGROUND
