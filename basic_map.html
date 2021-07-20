@@ -27,7 +27,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
-	  L.geoJson(gdp_grid).addTo(mymap);
+var geojsonLayer = new L.GeoJSON.AJAX("gdp_grid.geojson");       
+geojsonLayer.addTo(map);
 
   </script>
 </body>
