@@ -7,6 +7,7 @@
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+<script src="grid_gdp.geojson" type="text/javascript"></script>
   <style>
     #mapid { height:100%; }
   </style>
@@ -18,7 +19,7 @@
   <script>
 
   // initialize the map
-  var mymap = L.map('mapid').setView([51.505, -0.09], 2);
+  var mymap = L.map('mapid').setView([51.505, -0.09], 4);
 
   // load a tile layer
 
@@ -26,6 +27,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
+	  L.geoJson(gris_gdp).addTo(mymap);
 
   </script>
 </body>
